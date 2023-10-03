@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1::before {
+  background: #000000;
+  content: "";
+  display: block;
+  height: 10px;
+  width: 50px;
+}
+
+[href$=".pdf"]::after {
+  content: "(.pdf)";
+}
+
+[target="_blank"]::after {
+  content: "(open in new window)";
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  align-items: baseline;
+  justify-items: left;
+  gap: 1rem;
+}
+
+label {
+  margin: 1rem 0 0.25rem;
+}
+#cc {
+  order: 0;
+}
+[for="cc"] {
+  order: 1;
+}
+#twint {
+  order: 2;
+}
+[for="twint"] {
+  order: 3;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="index.html" method="post">
+      <legend>
+        <h1>Sample form</h1>
+        <p>To test the diffirent tags you could use in HTML forms</p>
+      </legend>
+      <fieldset>
+        <legend>Shipping address</legend>
+        <label for="fname">First name:</label>
+        <input
+          type="text"
+          name="first-name"
+          id="fname"
+          placeholder="e.g Susanne"
+        />
+
+        <label for="msg"> Message:</label>
+        <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option value="ch">Switzerland</option>
+          <option value="fr">France</option>
+        </select>
+
+        <label for="terms">I accepted the terms and conditions</label>
+        <input
+          type="checkbox"
+          id="terms"
+          name="terms-conditions"
+          value="terms-conditions"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Payment method</legend>
+        <label for="cc">Credit Card</label>
+        <input type="radio" id="cc" name="payment-method" value="credit-card" />
+
+        <label for="twint">Twint</label>
+        <input type="radio" name="payment-method" id="twint" value="twint" />
+      </fieldset>
+
+      <a href="document.pdf" target="_blank">Read more</a>
+    </form>
+  </body>
+</html>

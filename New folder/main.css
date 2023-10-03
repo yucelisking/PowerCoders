@@ -1,0 +1,45 @@
+a:hover {
+  background-color: #ff5e35;
+}
+
+.navbar {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #d1dbbd;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  color: #ff5e35;
+  padding: 1%;
+  background-color: #330136;
+}
+
+p,
+.row {
+  font-size: 16px;
+  width: 100%;
+  color: #fcfff5;
+}
+
+.title {
+  text-align: center;
+  font-size: 65px;
+  color: #fcfff5;
+}
+
+.information {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

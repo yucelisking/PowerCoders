@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="eng" dir="ltr">
+	<head>
+	<link rel="stylesheet" href="style.css">
+		<title> This is Yücel`s IT test!</title>
+	</head>	
+	<body>
+		<h1 id="heading">Hi</h1>
+		<p>I am <strong>Yücel</strong>, and this is a picture of my favourite food:</p>
+		<img src=”/food.jpg” alt="">
+		<script>document.getElementById("heading").textContent = "Hello Powercoders!";
+		</script>
+	</body>
+</html>
