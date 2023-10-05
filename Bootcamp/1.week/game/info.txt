@@ -1,5 +1,0 @@
-Welcome to the Guess Game.
-
-Wrtite cd game and ls.
-
-There are some options, you can select one of them and write cat with selected folders name.
