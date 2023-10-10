@@ -7,6 +7,21 @@
 
 // window.alert("You are " + result2 + "-" + result + ".");
 
+
+//Exercise - Age Calculator 2
+let birthYear = prompt("When were you born?");
+let futureYear = prompt("What is year?");
+
+
+if (birthYear>1900 && futureYear<2055) {
+
+    result = "Your age is " + (futureYear - birthYear) + " in " + futureYear;
+} else {
+    result = "please";
+}
+window.alert(result);
+
+
 //Exercise--
 // let age = 21;
 // let result;
@@ -73,14 +88,14 @@
 // }
 
 //Exercise-Multiplication tables
-while(true){
-let number = prompt ("Write a number between 0-10!");
-let multiply = (number * 9);
+// while(true){
+// let number = prompt ("Write a number between 0-10!");
+// let multiply = (number * 9);
 
-if (number>=0 && number<=10){
-    result = prompt("The result is " + multiply + ".");
-} else {
-        result = alert("Please write number between 0-10!");
-    }
-}
+// if (number>=0 && number<=10){
+//     result = prompt("The result is " + multiply + ".");
+// } else {
+//         result = alert("Please write number between 0-10!");
+//     }
+// }
 
