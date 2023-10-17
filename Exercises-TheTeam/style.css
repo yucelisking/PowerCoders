@@ -1,0 +1,84 @@
+html {
+    font-family: sans-serif;
+
+}
+
+body {
+    background: rgb(200, 200, 202);
+
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #F99417;
+}
+
+ul {
+    position: absolute;
+    width: 100%;
+    list-style: none;
+    padding-left: 5px;
+    bottom: 10px;
+
+}
+
+.icon {
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+}
+
+.icon img {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+
+
+.mainpage_team {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+div {
+    border: 1px solid orangered;
+    position: relative;
+
+}
+
+div img {
+    width: 400px;
+    height: auto;
+}
+
+.team_name,
+.team_position {
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.team_position {
+
+    bottom: 50px;
+}
+
+div:hover span {
+    display: block;
+
+}
