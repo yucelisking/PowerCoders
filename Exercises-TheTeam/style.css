@@ -82,3 +82,12 @@ div:hover span {
     display: block;
 
 }
+
+.titles {
+    text-align: center;
+
+}
+
+.titles h1 {
+    font-size: 50px;
+}
