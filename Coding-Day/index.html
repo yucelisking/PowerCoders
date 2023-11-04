@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Powercoders Bootcamp Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #quiz-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        #question {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        #options {
+            margin-top: 20px;
+        }
+
+        .option {
+            display: block;
+            margin: 10px 0;
+        }
+
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        #next-button {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>quiz</h1>
+    <main>
+        <button id="btn-nxt">Next</button>
+    </main>
+</header>
+
+    <!-- <script>
+        const questions = [
+            {
+                question: "What is HTML?",
+                options: ["Hypertext Markup Language", "Hyper Transfer Markup Language", "High Text Markup Language", "Hyperlink and Text Markup Language"],
+                correctAnswer: 0
+            },
+            {
+                question: "What is CSS used for?",
+                options: ["Creating interactive web pages", "Styling web pages", "Adding functionality to web pages", "Managing server-side code"],
+                correctAnswer: 1
+            },
+            {
+                question: "What does JavaScript primarily provide in web development?",
+                options: ["Database management", "Server-side rendering", "Client-side interactivity", "Web design tools"],
+                correctAnswer: 2
+            },
+            {
+                question: "What does HTTP stand for?",
+                options: ["Hypertext Transfer Protocol", "Hyper Text Transfer Page", "High Transfer Text Protocol", "Hyperlink and Text Transfer Protocol"],
+                correctAnswer: 0
+            },
+            {
+                question: "Which programming language is known for server-side scripting?",
+                options: ["Python", "JavaScript", "PHP", "HTML"],
+                correctAnswer: 2
+            }
+        ];
+
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        function loadQuestion() {
+            const currentQuestion = questions[currentQuestionIndex];
+            const questionElement = document.getElementById("question");
+            const optionsElement = document.getElementById("options");
+            const resultElement = document.getElementById("result");
+
+            questionElement.textContent = currentQuestion.question;
+            optionsElement.innerHTML = "";
+
+            currentQuestion.options.forEach((option, index) => {
+                const optionElement = document.createElement("button");
+                optionElement.classList.add("option");
+                optionElement.textContent = option;
+                optionElement.addEventListener("click", () => checkAnswer(index));
+                optionsElement.appendChild(optionElement);
+            });
+
+            resultElement.textContent = "";
+            document.getElementById("next-button").style.display = "none";
+        }
+
+        function checkAnswer(selectedOption) {
+            const currentQuestion = questions[currentQuestionIndex];
+            if (selectedOption === currentQuestion.correctAnswer) {
+                score++;
+                document.getElementById("result").textContent = "Correct!";
+            } else {
+                document.getElementById("result").textContent = "Wrong!";
+            }
+            document.getElementById("next-button").style.display = "block";
+        }
+
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                loadQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            const resultElement = document.getElementById("result");
+            resultElement.textContent = `You scored ${score} out of ${questions.length}.`;
+
+            const message = score === questions.length ? "You are a genius!" : "You did a great job!";
+            resultElement.textContent += ` ${message}`;
+            document.getElementById("next-button").style.display = "none";
+        }
+
+        loadQuestion();
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
